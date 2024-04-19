@@ -1,0 +1,24 @@
+{
+  "journeys": [
+    {
+      "period": "2023 - Now",
+      "title": "Springboard online bootcamp student",
+      "description": "During my Springboard online bootcamp journey, I mastered Python Flask for backend development, integrated with Jinja for dynamic website creation and Postgres for data management. I advanced in ReactJS for frontend development, crafting interactive user experiences, and revisited fundamental algorithms and data structures, enhancing my problem-solving skills significantly."
+    },
+    {
+      "period": "2019 - 2023",
+      "title": "Zero Flex - NBPLUS CORP",
+      "description": "As a solo entrepreneur, I founded a company to offer the Zero Flex app to Amazon Flex drivers, reaching thousands of signups and peaking at 600 subscriptions. The app swiftly gained traction, streamlining scheduling processes and enhancing efficiency for drivers in the gig economy."
+    },
+    {
+      "period": "Jun, 2015 - Dec, 2015",
+      "title": "Web Developer - Platform5",
+      "description": "At Platform5, I joined as a fresh Wordpress developer, quickly adapting to the company's workflow and their customized platform. I led a team of three in assisting a partner with CMS testing, contributing to collaborative efforts and fostering valuable partnerships."
+    },
+    {
+      "period": "2015",
+      "title": "Gratuated from University of Science, Vietnam",
+      "description": "During my time at the University of Science, Vietnam, I focused on mastering fundamental software development concepts and honing my skills in algorithm implementation and data structures. I explored various topics including Graph Theory and Testing fundamentals, laying a solid groundwork for my career in software engineering."
+    }
+  ]
+}
