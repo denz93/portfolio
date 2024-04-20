@@ -1,7 +1,7 @@
 import { Sparkle } from "lucide-react";
 import { projects } from "./projects-data";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next-image-export-optimizer";
 
 export default function Projects() {
   return (

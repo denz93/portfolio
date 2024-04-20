@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import data from "./journeys.json";
 import MyFace from "./assets/nbach-face.png";
-import Image from "next/image";
+import Image from "next-image-export-optimizer";
 export default function About() {
   return (
     <section

@@ -1,5 +1,5 @@
 import { ChevronDown, Linkedin, Github } from "lucide-react";
-import Image from "next/image";
+import Image from "next-image-export-optimizer";
 import HeroImage from "./assets/hero.png";
 import Link from "next/link";
 
