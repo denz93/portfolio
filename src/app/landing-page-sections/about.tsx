@@ -20,20 +20,20 @@ export default function About() {
       <div className="divider w-1/2 mx-auto divider-neutral my-4 opacity-50">
         <Sparkle size={48} />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8">
-        <div className="md:row-start-1 md:col-start-3 md:mx-0 flex flex-wrap gap-2 mx-auto items-center justify-center ">
-          <div className="relative w-72 aspect-square rounded-full overflow-hidden">
-            <div className="relative top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[242px] w-[242px] aspect-square rounded-full  bg-gradient-to-b from-amber-600/30 via-neutral-600/30 to-transparent mix-blend-overlay">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-x-8">
+        <div className="md:row-start-1 md:col-start-3 lg:col-start-4 lg:col-span-2   md:mx-0 flex flex-wrap  gap-2 mx-auto justify-center ">
+          <div className="relative flex justify-center md:items-end items-center mt-auto w-full  max-w-[256px] aspect-square rounded-full overflow-hidden">
+            <div className="relative w-[80%]  aspect-square rounded-full  bg-gradient-to-b from-amber-600/30 via-neutral-600/30 to-transparent mix-blend-overlay">
               <Image
                 src={MyFace.src}
                 alt="Nhan Bach"
                 width={242}
                 height={242}
-                className="object-contain opacity-100 w-[242px] h-[242px] rounded-full -top-[20px]  relative "
+                className="object-contain opacity-100 w-full aspect-square rounded-full -top-[20px] mix-blend-overlay relative "
               />
             </div>
           </div>
-          <div className="text-sm flex flex-col justify-end">
+          <div className="text-sm my-auto md:mt-0 flex flex-col">
             <h3 className="text-xl font-extrabold">Nhan Bach</h3>
             <p className="font-extralight opacity-40">Web Developer</p>
             <p className="flex gap-2 items-center">
@@ -41,7 +41,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="row-span-1 col-start-1 col-span-1 md:col-span-2 text-lg ">
+        <div className="row-span-1 col-start-1 col-span-1 md:col-span-2 lg:col-span-3 lg:row-span-1 lg:row-start-1 text-lg ">
           <h2 className="text-4xl my-4">Summary</h2>
           <p className="text-justify font-extralight leading-relaxed">
             Originally a software engineer graduate from Vietnam in 2015, my
@@ -60,7 +60,7 @@ export default function About() {
             for practical solutions.
           </p>
         </div>
-        <div className="md:col-span-2 md:row-start-2">
+        <div className="md:col-span-2 md:row-start-2 lg:col-start-1 lg:col-span-3">
           <h2 className="text-4xl my-4">Interests</h2>
           <div className="flex flex-wrap gap-2 items-center">
             <span className="badge badge-neutral badge-lg items-center gap-1">
@@ -77,7 +77,7 @@ export default function About() {
             </span>
           </div>
         </div>
-        <div className="md:col-span-3 mt-8 ">
+        <div className="md:col-span-3 lg:col-span-5 mt-8 ">
           <h2 className="mb-4">My Journey</h2>
           <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical xl:max-w-[860px] mx-auto">
             {data.journeys.map((j, idx) => (
