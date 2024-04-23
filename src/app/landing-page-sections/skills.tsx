@@ -21,11 +21,14 @@ export default function Skills() {
                 (skill) => (
                   <>
                     <span className="text-right">{skill.name}</span>
-                    <progress
-                      value={skill.confident}
-                      max={100}
-                      className="progress w-3/4 mr-auto relative after:content-[attr(value)_'%'] overflow-visible after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:translate-x-[120%]"
-                    ></progress>
+                    <div className="flex items-center gap-2">
+                      <progress
+                        value={skill.confident}
+                        max={100}
+                        className="progress w-full mr-auto relative"
+                      ></progress>
+                      <span className="text-right ">{skill.confident}%</span>
+                    </div>
                   </>
                 ),
               )}
