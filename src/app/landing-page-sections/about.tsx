@@ -10,6 +10,7 @@ import {
 import data from "./journeys.json";
 import MyFace from "./assets/nbach-face.png";
 import Image from "next-image-export-optimizer";
+import Link from "next/link";
 export default function About() {
   return (
     <section
@@ -39,6 +40,14 @@ export default function About() {
             <p className="flex gap-2 items-center">
               <MapPin /> <span className="">San Francisco, CA</span>
             </p>
+            <Link
+              href={"/Nhan-Bach-Resume-Rev1.pdf"}
+              target="_blank"
+              download={"Nhan Bach Resume"}
+              className="btn btn-neutral"
+            >
+              Download Resume
+            </Link>
           </div>
         </div>
         <div className="row-span-1 col-start-1 col-span-1 md:col-span-2 lg:col-span-3 lg:row-span-1 lg:row-start-1 text-lg ">
