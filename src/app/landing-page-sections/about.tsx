@@ -22,7 +22,7 @@ export default function About() {
         <Sparkle size={48} />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-x-8">
-        <div className="md:row-start-1 md:col-start-3 lg:col-start-4 lg:col-span-2   md:mx-0 flex flex-wrap  gap-2 mx-auto justify-center ">
+        <div className="md:row-start-1 md:col-start-3 lg:col-start-4 lg:col-span-2   md:mx-0 flex flex-wrap flex-col items-center  gap-2 mx-auto justify-center ">
           <div className="relative flex justify-center md:items-end items-center mt-auto w-full  max-w-[256px] aspect-square rounded-full overflow-hidden">
             <div className="relative w-[80%]  aspect-square rounded-full  bg-gradient-to-b from-amber-600/30 via-neutral-600/30 to-transparent mix-blend-overlay">
               <Image
