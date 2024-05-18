@@ -41,7 +41,7 @@ export default function About() {
               <MapPin /> <span className="">San Francisco, CA</span>
             </p>
             <Link
-              href={"/Nhan-Bach-Resume-Rev1.pdf"}
+              href={"/Nhan-Bach-Resume.pdf"}
               target="_blank"
               download={"Nhan Bach Resume"}
               className="btn btn-neutral"
