@@ -29,7 +29,7 @@ export default function Hero({
             Nhan Bach
           </h1>
           <p className="py-6 max-w-screen-sm text-center lg:text-xl 2xl:text-4xl">
-            Passionate Web Developer specializing in ReactJS, Typescript, and
+            Passionate Web Developer specializing in ReactJS, TypeScript, and
             Python, dedicated to crafting innovative solutions for real-world
             challenges.
           </p>
