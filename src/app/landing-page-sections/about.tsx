@@ -36,7 +36,7 @@ export default function About() {
           </div>
           <div className="text-sm my-auto md:mt-0 flex flex-col">
             <h3 className="text-xl font-extrabold">Nhan Bach</h3>
-            <p className="font-extralight opacity-40">Web Developer</p>
+            <p className="font-extralight opacity-40">Software Engineer</p>
             <p className="flex gap-2 items-center">
               <MapPin /> <span className="">San Francisco, CA</span>
             </p>
