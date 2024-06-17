@@ -1,6 +1,21 @@
 import { Sparkle } from "lucide-react";
+import "react-icons/si";
 import { skills } from "./skills-data";
 import _ from "lodash";
+import React from "react";
+import { IconType } from "react-icons/lib";
+let icons = {} as { [key: string]: IconType };
+
+new Promise(async (resolve) => {
+  let mod: any = await import("react-icons/fa");
+  icons = { ...icons, ...mod } as any;
+  mod = await import("react-icons/ri");
+  icons = { ...icons, ...mod } as any;
+  mod = await import("react-icons/tb");
+  icons = { ...icons, ...mod } as any;
+  mod = await import("react-icons/si");
+  icons = { ...icons, ...mod } as any;
+});
 
 export default function Skills() {
   const groupedSkills = _.groupBy(skills, (s) => s.category);
@@ -11,27 +26,19 @@ export default function Skills() {
       <div className="divider w-1/2 mx-auto opacity-50">
         <Sparkle size={48} />
       </div>
-      <ul className="grid grid-cols-1 md:grid-cols-2 gap-16">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 gap-y-12">
         {_.map(groupedSkills, (skills, category) => (
-          <li key={category}>
+          <li key={category} className=" text-center">
             <h3 className="capitalize mb-4">{category}</h3>
-            <div className="grid grid-cols-[max-content_minmax(0,1fr)] gap-4 items-center">
-              {_.map(
-                _.sortBy(skills, (s) => -s.confident),
-                (skill) => (
-                  <>
-                    <span className="text-right">{skill.name}</span>
-                    <div className="flex items-center gap-2">
-                      <progress
-                        value={skill.confident}
-                        max={100}
-                        className="progress w-full mr-auto relative"
-                      ></progress>
-                      <span className="text-right ">{skill.confident}%</span>
-                    </div>
-                  </>
-                ),
-              )}
+            <div className="flex gap-2 flex-wrap justify-center">
+              {skills.map((skill) => (
+                <>
+                  <span className="btn btn-neutral">
+                    {icons[skill.icon]?.({}) ?? null}
+                    {skill.name}
+                  </span>
+                </>
+              ))}
             </div>
           </li>
         ))}
